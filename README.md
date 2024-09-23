@@ -9,6 +9,9 @@
 - **Multitasking**: Assists with executing multiple tasks simultaneously and provides real-time notifications and suggestions to improve workflow.
 - **Customizable 3D Avatar**: Generate and personalize a visual avatar to create a unique interaction experience.
 - **AI Provider Integration**: Support for multiple AI providers, including OpenAI, Anthropic Claude, Hugging Face, and Ollama, allowing users to switch between providers seamlessly.
+- **Voice Control**: Interact with OmniMind AI using voice commands for hands-free operation.
+- **Location Services & Maps**: Access real-time location data and integrate with Google Maps and Apple Maps for navigation and location-based tasks.
+- **Android Auto Integration**: Seamlessly interact with OmniMind AI through your car's infotainment system, enabling safe and convenient access while driving.
 
 ## Technologies:
 - **React Native** for cross-platform mobile development (iOS and Android).
@@ -20,6 +23,9 @@
 - **Daily Assistance**: Manage tasks and reminders, organize emails and calendars, and handle phone calls.
 - **Emergency Handling**: Recognizes emergencies and can automatically contact emergency services or predefined contacts.
 - **Learning Capability**: The AI learns from user interactions over time, adapting to provide better recommendations and actions.
+- **Hands-Free Operation**: Use voice commands to control the assistant without needing to interact manually.
+- **Navigation & Location-Based Tasks**: Get directions, find nearby places, and receive location-specific reminders.
+- **In-Car Assistance**: Access AI functionalities through Android Auto for safe, hands-free interaction while driving.
 
 ## AI Provider Integration Details:
 OmniMind AI supports integration with multiple AI providers. Here's how each AI provider is used:
@@ -51,6 +57,9 @@ Users can choose their preferred AI provider, input API keys, and switch between
 - **React Native**: Enables cross-platform mobile app development for iOS and Android.
 - **React Three Fiber**: Integrates Three.js with React for rendering and managing the 3D avatar.
 - **Expo**: Simplifies the development process by handling native permissions and configurations.
+- **@react-native-voice/voice**: Implements voice recognition for hands-free control.
+- **react-native-maps**: Integrates map functionalities and location services.
+- **Android Auto SDK**: Integrates Android Auto functionalities for in-car assistance.
 
 ### **Backend Technologies:**
 - **Node.js**: Provides a scalable and efficient runtime environment for the backend server.
@@ -83,6 +92,33 @@ Users can choose their preferred AI provider, input API keys, and switch between
 - **Firebase Cloud Messaging (FCM)**: Sends real-time push notifications to users.
 - **LIME & SHAP**: Implements explainable AI models to provide transparency in AI decision-making.
 - **AIF360 & Fairness Indicators**: Monitors and mitigates algorithmic biases in AI responses.
+
+## License:
+The project is licensed under [LICENSE.md](./LICENSE.md). Please review the license before using the software.
+
+## Android Auto Integration
+
+Integrating **Android Auto** into OmniMind AI enhances user experience by allowing seamless interaction while driving. This integration enables users to access AI assistant features through their car's infotainment system, ensuring safety and convenience.
+
+### Key Features:
+- **Voice Commands**: Hands-free interaction using Google Assistant.
+- **Navigation**: Access to map functionalities for directions and location-based tasks.
+- **Messaging and Calls**: Handle phone calls and messages safely while driving.
+- **Media Control**: Manage media playback if applicable.
+
+### Integration Steps:
+- **Setting Up Your Android Project**: Configure your React Native project's Android setup by adding necessary dependencies and permissions.
+- **Configuring AndroidManifest.xml**: Declare services and permissions required for Android Auto integration.
+- **Implementing Android Auto Features**: Develop services to handle voice commands and interact with the React Native frontend.
+- **Communicating Between React Native and Native Modules**: Establish communication channels between native Android components and React Native to process and respond to user commands.
+
+### Best Practices:
+- **User Safety**: Ensure all interactions are hands-free to minimize driver distraction. Use clear and concise voice prompts.
+- **Permissions Management**: Clearly request and justify permissions like microphone and location access. Handle permission denial gracefully.
+- **Performance Optimization**: Optimize backend responses to minimize latency and ensure smooth rendering of maps and voice interactions.
+- **Compliance with Android Auto Guidelines**: Adhere to [Android Auto Design Guidelines](https://developer.android.com/training/cars/apps) to ensure your app meets all requirements for safety and usability.
+- **Localization**: Support multiple languages to cater to a diverse user base.
+- **Privacy and Data Security**: Implement strong data encryption and secure API communication. Comply with regional data protection laws (e.g., GDPR, CCPA).
 
 ## License:
 The project is licensed under [LICENSE.md](./LICENSE.md). Please review the license before using the software.
